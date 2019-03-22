@@ -1,0 +1,104 @@
+/*Alex Kubecka
+I pledge my honor that I have abided by the Stevens Honor System*/
+h1 {
+	font-weight:normal;
+}
+
+h2 {
+	font-weight:normal;
+	color: grey;
+}
+
+h3 {
+	font-weight:normal;
+	text-decoration: underline;
+	color: grey;
+}
+
+.subheader {
+	font-size: 14px;
+}
+
+.profile-picture.small.offline {
+	opacity: .5;
+}
+
+.profile {
+	background-color: non-grey;
+	line-height: 1.4;
+}
+
+.profile-picture.large {
+	object-fit: cover;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.profile-picture.small {
+	height: 50px;
+	width: 50px;
+	padding: 10px
+}
+
+@media only screen and (min-width: 800px) {
+	.profile-picture.large {
+		height: 300px;
+		width: 300px;
+		float:left;
+	}
+	.profile {
+		max-width:800px;
+		margin: auto;
+	}
+	.profile-content {
+		margin-left: 310px;
+	}
+}
+
+@media only screen and (max-width: 799px) {
+	.profile {
+		margin-left: 20px;
+		margin-right: 20px;		
+	}
+	.profile-picture.large {
+		display: block;
+		height: 150px;
+		width: 150px;
+		margin: auto;
+		border-radius: 50%;
+	}
+	.friends-list{
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.profile-picture.small {
+		border-radius: 50%;
+	}
+	
+	h1 {
+		text-align:center;
+	}
+
+	h2 {
+		text-align:center;
+	}
+
+	h3 {
+		text-align:center;
+	}
+}
+
+@media only screen and (max-width: 399px) {
+	.profile {
+		line-height: 2.0;
+		margin-left: 1px;
+		margin-right: 1px;	
+	}
+	.profile-content {
+		text-align:justify;
+		width:100%
+	}
+	.profile-picture.large {
+		border-radius: 50%;
+	}
+}
